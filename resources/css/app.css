@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind primevue; /* Component */
+@tailwind utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e9edf000;
+    border-left: 2px solid #ededed00;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2e3092;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    /* <== make the border work */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 0;
+}
